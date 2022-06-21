@@ -78,12 +78,52 @@ body{
     margin-top: -30px;
 }
 
-
+.container .jumbotron{
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile{
+    background: url('../images/healthy-eating-ingredients-732x549-thumbnail.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile{
+    background: url('../images/default-pasta.jpg') no-repeat;
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
 
 /* Media Query for different devices */
 @media (min-width: 1200px){
+    .jumbotron{
+        background: url('../images/logo-removebg-preview\ \(1\).png') no-repeat;
+        height: 675px;
+    }
 
 }
+
+/* medium devices only*/
 @media (min-width:992px) and (max-width: 1199px){
     /* Header */
     #logo-img{
@@ -92,12 +132,22 @@ body{
         height: 100px;
         margin: 5px 5px 5px 0;
     }
+
+    .jumbotron{
+        background: url('../images/logo-removebg-preview\ \(1\).png') no-repeat;
+        height: 558px;
+    }
 }
 
+ /* small devices only */
 @media (min-width:768px) and (max-width: 991px){
-   
+    .jumbotron{
+        background: url('../images/logo-removebg-preview\ \(1\).png') no-repeat;
+        height: 432px;
+    }
 }
 
+ /* extra small devices only  */
 @media (max-width: 767px){
     .navbar-brand {
         padding-top: 10px;
@@ -122,5 +172,40 @@ body{
     #collapsable-nav a span {
         font-size: 1em;
         margin-right: 5px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    } 
+    #xs-deliver{
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    .container .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+    }
+    #menu-tile, #specials-tile{
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+
+}
+/* super extra small */
+@media (max-width: 479px){
+    .navbar-brand h1{
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    #menu-tile, #specials-tile{
+        width: 280px;
+        margin: 0 auto 15px;
     }
 }
