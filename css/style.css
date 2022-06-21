@@ -174,7 +174,54 @@ body{
     margin-bottom: 50px;
 }
 
-/* Media Query for different devices */
+/* single menu-category */
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+.menu-item-tile hr{
+    width: 80%;
+}
+.menu-item-tile .menu-item-price{
+    font-size:1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span{
+    font-size: .6em;
+}
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    padding:0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom:20px;
+    max-width: 250px;
+}
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu-item-description{
+    padding-right: 30px;
+}
+h3.menu-item-title{
+    margin: 0 0 10px;
+}
+.menu-item-details{
+    font-size: .9em;
+    font-style: italic;
+}
+/* end of single category */
+
+
+/************* Media Query for large  devices  *************/
 @media (min-width: 1200px){
     .jumbotron{
         background: url('../images/logo-removebg-preview\ \(1\).png') no-repeat;
@@ -183,7 +230,7 @@ body{
 
 }
 
-/* medium devices only*/
+/************* Media Query for medium devices only ******8*/
 @media (min-width:992px) and (max-width: 1199px){
     /* Header */
     #logo-img{
@@ -199,7 +246,7 @@ body{
     }
 }
 
- /* small devices only */
+ /********* Media Query for small devices only ***********/
 @media (min-width:768px) and (max-width: 991px){
     .jumbotron{
         background: url('../images/logo-removebg-preview\ \(1\).png') no-repeat;
@@ -207,8 +254,9 @@ body{
     }
 }
 
- /* extra small devices only  */
+ /*********Media Query for extra small devices only  *******/
 @media (max-width: 767px){
+    /* header  */
     .navbar-brand {
         padding-top: 10px;
         height: 80px;
@@ -248,7 +296,9 @@ body{
         letter-spacing: .1em;
         text-transform: uppercase;
     }
+    /*  End of Header */
 
+    /* Footer */
     .panel-footer{
         margin-bottom: 30px;
         text-align: center;
@@ -259,6 +309,9 @@ body{
     .panel-footer section hr{
         width: 50%;
     }
+    /* End Footer */
+
+    /* Home Page */
     .container .jumbotron{
         margin-top: 30px;
         padding: 0;
@@ -268,8 +321,18 @@ body{
         margin: 0 auto 15px;
     }
 
+    .menu-item-photo{
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price{
+        text-align: center;
+    }
+    .menu-item-description{
+        text-align: center;
+    }
+
 }
-/* super extra small */
+/******* Media Query for super extra small ***********/
 @media (max-width: 479px){
     /* header */
     .navbar-brand h1{
